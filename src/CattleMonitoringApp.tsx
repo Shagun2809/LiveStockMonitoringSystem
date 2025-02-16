@@ -37,7 +37,7 @@ const CattleMonitoringApp = () => {
   const fetchDataForAllSetups = async () => {
     const fetchPromises = Object.keys(sheetIds).map(async (setup) => {
       const sheetId = sheetIds[setup];
-      const apiKey = `AIzaSyCfa1d2kbuJ1Hu1kSMp5e50-F7T-9adIk8`;
+      const apiKey = `************************`;
       const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/Sheet1!A1:J?key=${apiKey}`;
 
       try {
